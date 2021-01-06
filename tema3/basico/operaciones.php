@@ -42,7 +42,8 @@ function piramide ($palabra)
 
 }
 
-piramide("coronas"); 
+
+ 
 
 
 ?>

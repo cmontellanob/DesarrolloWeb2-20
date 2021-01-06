@@ -1,4 +1,29 @@
 .tabla {
 	border: solid 1px;
-
+	padding: 10px;
+	width: 100%;
 }
+td.rojo {
+	border: solid 1px;
+	padding: 0px;
+	margin:  0px;	
+}
+
+td.blanco {
+	border: solid 1px;
+	padding: 0px;
+	margin:  0px;	
+}
+
+
+.rojo {
+	background-color: red;
+}
+.blanco {
+	background-color: white;
+}
+.fondo {
+	background-color: #3673d6;	
+	width: 50%;
+}
+
