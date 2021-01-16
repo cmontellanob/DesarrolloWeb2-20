@@ -6,7 +6,10 @@
 	<title>Editar</title>
 </head>
 <body>
-<?php $id=$_GET['id'];
+<?php session_start();
+include("verificar.php");
+include("verificarrol.php");
+$id=$_GET['id'];
 include ("conexion.php"); // conectarse
 $sql="SELECT id,nombres,apellidos,sexo,fechanacimiento,celular,correo,idprocedencia,fotografia from personas where id=".$id; //formar sql
 $resultado = mysqli_query ($con, $sql) ; //ejecutar elsql

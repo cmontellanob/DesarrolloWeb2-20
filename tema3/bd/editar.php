@@ -1,4 +1,7 @@
-<?php
+<?php session_start();
+include("verificar.php");
+include("verificarrol.php");
+
 include ("conexion.php"); // conectarse
 $nombres=$_POST['nombres'];
 $apellidos=$_POST['apellidos'];

@@ -1,3 +1,11 @@
+<?php  session_start();
+include("verificar.php");
+include("verificarrol.php");
+include("conexion.php"); 
+$sql="SELECT id,procedencia from procedencia ";
+$resultado = mysqli_query ($con, $sql) ; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +14,6 @@
 	<title>Insertar</title>
 </head>
 <body>
-<?php 
-include("conexion.php"); 
-$sql="SELECT id,procedencia from procedencia ";
-$resultado = mysqli_query ($con, $sql) ; 
-?>
 
 	
 <form action="insertar.php" method="POST" enctype="multipart/form-data" >

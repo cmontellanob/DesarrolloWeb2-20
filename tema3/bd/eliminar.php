@@ -1,4 +1,5 @@
-<?php
+<?php session_start();
+include("verificar.php");
 include ("conexion.php"); // conectarse
 $id=$_GET['id'];
 
