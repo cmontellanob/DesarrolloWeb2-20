@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.rojo {
+           background-color: red;
+		}
+		.azul {
+           background-color: blue;
+		}
+	</style>
+</head>
+<body>
+
+<p class="rojo"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, possimus corporis optio harum qui accusantium natus amet aut eius minus provident assumenda ipsam reprehenderit ut ullam nam nulla earum voluptatibus.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Itaque ea aut cumque animi obcaecati impedit ad, nam et ex libero corrupti cum mollitia quo ipsum, minus. Voluptates, quia odit non.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex blanditiis numquam asperiores quis? Repellat nostrum exercitationem laboriosam suscipit, architecto ut, porro vel dolores debitis atque doloribus quae? Expedita, deserunt deleniti.</p>
+<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Ducimus perferendis quaerat dolor ullam, et eos provident error voluptatibus quibusdam nisi tempora vel, quam recusandae? Quas culpa velit, reprehenderit voluptatem possimus./p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum est magnam, corporis nemo nisi. Ullam, architecto recusandae repudiandae odio, suscipit laborum odit nobis possimus vero laudantium fugiat unde alias?</p>
+
+	<script>
+		var parrafos = document.getElementsByTagName("p");
+
+		parrafos[0].innerHTML="CArlos MOdifico el parrafo";
+		document.write("el numero de parrafos del documento es"+parrafos.length);
+	   document.write("la clase del parrafo 1 es "+parrafos[0].className);
+	   
+	   parrafos[0].className="azul";
+	   document.write("la clase del parrafo 1 es "+parrafos[0].className);
+			
+
+	</script>
+	
+</body>
+</html>
