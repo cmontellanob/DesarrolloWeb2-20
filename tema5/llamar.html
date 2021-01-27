@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<h1>Prueba de Ajax</h1>
+<button onclick="llamarpagina()">llamar </button>
+<div id="resultado" style="background-color: green">
+
+	
+</div>
+
+
+
+<script>
+function llamarpagina()
+{
+	var ajax=new XMLHttpRequest();
+	ajax.open("GET", "datos.html", true);
+	ajax.onreadystatechange=function ()
+	{
+		if (ajax.readyState==4 && ajax.status==200)
+		{
+
+			document.getElementById('resultado').innerHTML=ajax.responseText;
+		}
+	}
+	ajax.send();
+}
+
+</script>
+
+	
+</body>
+</html>
